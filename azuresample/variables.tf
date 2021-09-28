@@ -8,7 +8,7 @@ variable "myTag" {
   default = "terraform-test"
 }
 
-variable "region" {
+variable "location" {
   description = "My Default Location"
   default = "East US"
 }
