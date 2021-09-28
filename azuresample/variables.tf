@@ -10,6 +10,6 @@ variable "myTag" {
 
 variable "region" {
   description = "My Default Location"
-  default = "us-east-1"
+  default = "East US"
 }
 
