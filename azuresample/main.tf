@@ -4,7 +4,6 @@ provider "azurerm" {
     # If you're using version 1.x, the "features" block is not allowed.
     version = "~>2.0"
     features {}
-    region = "East US"
 }
 
 # Create a resource group if it doesn't exist
