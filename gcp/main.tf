@@ -23,6 +23,6 @@ resource "google_compute_instance" "vm_instance" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name                    = "terraform-network1"
+  name                    = "terraform-network2"
   auto_create_subnetworks = "true"
 }
