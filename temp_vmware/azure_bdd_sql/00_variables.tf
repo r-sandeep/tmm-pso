@@ -8,6 +8,16 @@ variable "database_name" {
     name      = string
     collation = string
   }))
+  default = [
+    {
+      "name" = "db1",
+      "collation" = "SQL_Latin1_General_CP1_CI_AS"
+    },
+    {
+      "name" = "db2",
+      "collation" = "SQL_Latin1_General_CP1_CI_AS"
+    }
+  ]
 }
 
 variable "bdd_login" {
