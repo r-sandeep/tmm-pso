@@ -24,7 +24,7 @@ resource "azurerm_lb_probe" "lbapi" {
   protocol            = "Tcp"
 }
 
-resource "azurerm_lb_rule" "example" {
+resource "azurerm_lb_rule" "example3" {
   resource_group_name            = "${var.rg_name}"
   loadbalancer_id                = "${azurerm_lb.lbapi.id}"
   name                           = "Master_Rule"
@@ -69,7 +69,7 @@ resource "azurerm_lb_probe" "lbrouter_02" {
   protocol            = "Tcp"
 }
 
-resource "azurerm_lb_rule" "example" {
+resource "azurerm_lb_rule" "example1" {
   resource_group_name            = "${var.rg_name}"
   loadbalancer_id                = "${azurerm_lb.lbrouter.id}"
   name                           = "Infra_Rule_01"
@@ -81,7 +81,7 @@ resource "azurerm_lb_rule" "example" {
   probe_id                       = "${azurerm_lb_probe.lbrouter_01.id}"
 }
 
-resource "azurerm_lb_rule" "example" {
+resource "azurerm_lb_rule" "example2" {
   resource_group_name            = "${var.rg_name}"
   loadbalancer_id                = "${azurerm_lb.lbrouter.id}"
   name                           = "Infra_Rule_02"
